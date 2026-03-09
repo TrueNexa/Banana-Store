@@ -4,90 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Banana Store</title>
-    <meta
-      name="description"
-      content="Order fresh bananas online with quick cart updates and same-day delivery options."
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="brand-wrap">
-        <p class="eyebrow">Farm picked daily</p>
-        <h1>Banana Store</h1>
-        <p class="lead">
-          Buy premium bananas by variety. Add quantities, review your order, and check out in seconds.
+    <main class="container">
+      <header class="hero">
+        <p class="badge">Fresh today</p>
+        <h1>Banana Bazaar</h1>
+        <p class="subtitle">
+          Sweet, ripe bananas delivered to your doorstep.
         </p>
-      </div>
-    </header>
+      </header>
 
-    <main class="layout">
-      <section aria-labelledby="products-title" class="products-section">
-        <div class="section-head">
-          <h2 id="products-title">Choose your bananas</h2>
-          <p>Free delivery on orders over $15.</p>
-        </div>
+      <section class="products" aria-label="Banana products">
+        <article class="card">
+          <h2>Classic Bananas</h2>
+          <p>1 kg bunch • Farm-fresh</p>
+          <p class="price" data-price="2.5">$2.50</p>
+          <button class="add-btn" data-product="Classic Bananas" data-price="2.5">
+            Add to Cart
+          </button>
+        </article>
 
-        <div class="product-grid" id="product-grid">
-          <article class="product-card" data-id="classic" data-name="Classic Banana" data-price="2.5">
-            <h3>Classic Banana</h3>
-            <p>1kg bunch • Balanced sweetness • Great for everyday snacks.</p>
-            <p class="price">$2.50</p>
-            <button class="btn add-to-cart" type="button">Add to cart</button>
-          </article>
+        <article class="card">
+          <h2>Organic Bananas</h2>
+          <p>1 kg bunch • Certified organic</p>
+          <p class="price" data-price="3.2">$3.20</p>
+          <button class="add-btn" data-product="Organic Bananas" data-price="3.2">
+            Add to Cart
+          </button>
+        </article>
 
-          <article class="product-card" data-id="organic" data-name="Organic Banana" data-price="3.5">
-            <h3>Organic Banana</h3>
-            <p>1kg bunch • Certified organic • No synthetic pesticides.</p>
-            <p class="price">$3.50</p>
-            <button class="btn add-to-cart" type="button">Add to cart</button>
-          </article>
-
-          <article class="product-card" data-id="mini" data-name="Mini Banana" data-price="3.0">
-            <h3>Mini Banana</h3>
-            <p>750g pack • Extra sweet • Perfect lunchbox portion.</p>
-            <p class="price">$3.00</p>
-            <button class="btn add-to-cart" type="button">Add to cart</button>
-          </article>
-
-          <article class="product-card" data-id="red" data-name="Red Banana" data-price="4.2">
-            <h3>Red Banana</h3>
-            <p>900g bunch • Berry-like flavor • Limited seasonal stock.</p>
-            <p class="price">$4.20</p>
-            <button class="btn add-to-cart" type="button">Add to cart</button>
-          </article>
-        </div>
+        <article class="card">
+          <h2>Mini Bananas</h2>
+          <p>750 g pack • Extra sweet</p>
+          <p class="price" data-price="2.9">$2.90</p>
+          <button class="add-btn" data-product="Mini Bananas" data-price="2.9">
+            Add to Cart
+          </button>
+        </article>
       </section>
 
-      <aside class="cart" aria-labelledby="cart-title">
-        <div class="cart-head">
-          <h2 id="cart-title">Your cart</h2>
-          <button type="button" id="clear-cart" class="btn btn-secondary">Clear</button>
-        </div>
-
-        <p id="cart-message" class="cart-message" aria-live="polite">Your cart is empty.</p>
-        <ul id="cart-items" class="cart-items" aria-live="polite"></ul>
-
-        <dl class="summary">
-          <div>
-            <dt>Items</dt>
-            <dd id="item-count">0</dd>
-          </div>
-          <div>
-            <dt>Subtotal</dt>
-            <dd id="subtotal">$0.00</dd>
-          </div>
-          <div>
-            <dt>Delivery</dt>
-            <dd id="delivery">$3.00</dd>
-          </div>
-          <div class="summary-total">
-            <dt>Total</dt>
-            <dd id="total">$3.00</dd>
-          </div>
-        </dl>
-
-        <button type="button" id="checkout" class="btn checkout">Checkout</button>
+      <aside class="cart" aria-live="polite">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p class="total">Total: <span id="cart-total">$0.00</span></p>
+        <button id="checkout-btn">Checkout</button>
       </aside>
     </main>
 
