@@ -13,6 +13,7 @@ export default function App() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [loginError, setLoginError] = useState('');
+  const [cartItems, setCartItems] = useState([]);
 
   function handleAddToCart(product) {
     setCartItems((prev) => [...prev, product]);
@@ -27,6 +28,7 @@ export default function App() {
     alert(`Thanks! Your banana order total is $${total.toFixed(2)}.`);
     setCartItems([]);
   }
+
 
   function handleLogin(event) {
     event.preventDefault();
@@ -94,6 +96,7 @@ export default function App() {
       <button className="logout-btn" onClick={handleLogout}>
         Logout
       </button>
+
       <Header />
 
       <section className="products" aria-label="Banana products">
