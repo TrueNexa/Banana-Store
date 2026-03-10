@@ -5,6 +5,7 @@
   --accent-dark: #e0a800;
   --text: #2d2d2d;
   --muted: #6a6a6a;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
 * {
@@ -13,7 +14,6 @@
 
 body {
   margin: 0;
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--text);
   background: linear-gradient(180deg, #fffef8 0%, var(--bg) 100%);
 }

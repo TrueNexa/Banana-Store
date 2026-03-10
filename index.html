@@ -4,55 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Banana Store</title>
-    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="container">
-      <header class="hero">
-        <p class="badge">Fresh today</p>
-        <h1>Banana Bazaar</h1>
-        <p class="subtitle">
-          Sweet, ripe bananas delivered to your doorstep.
-        </p>
-      </header>
-
-      <section class="products" aria-label="Banana products">
-        <article class="card">
-          <h2>Classic Bananas</h2>
-          <p>1 kg bunch • Farm-fresh</p>
-          <p class="price" data-price="2.5">$2.50</p>
-          <button class="add-btn" data-product="Classic Bananas" data-price="2.5">
-            Add to Cart
-          </button>
-        </article>
-
-        <article class="card">
-          <h2>Organic Bananas</h2>
-          <p>1 kg bunch • Certified organic</p>
-          <p class="price" data-price="3.2">$3.20</p>
-          <button class="add-btn" data-product="Organic Bananas" data-price="3.2">
-            Add to Cart
-          </button>
-        </article>
-
-        <article class="card">
-          <h2>Mini Bananas</h2>
-          <p>750 g pack • Extra sweet</p>
-          <p class="price" data-price="2.9">$2.90</p>
-          <button class="add-btn" data-product="Mini Bananas" data-price="2.9">
-            Add to Cart
-          </button>
-        </article>
-      </section>
-
-      <aside class="cart" aria-live="polite">
-        <h2>Your Cart</h2>
-        <ul id="cart-items"></ul>
-        <p class="total">Total: <span id="cart-total">$0.00</span></p>
-        <button id="checkout-btn">Checkout</button>
-      </aside>
-    </main>
-
-    <script src="script.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
